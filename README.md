@@ -1,69 +1,45 @@
-# React + TypeScript + Vite
+______
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```
+clone the repo
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+git clone https://github.com/mamathathanniru07/doctor-appointment.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+____
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+**after successful clone do**
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+npm install 
+npm run dev
+```
+
+## frameworks used
+* Vite + React + TypeScript
+* MaterialUI
+* React Hooks
+
+
+
+## If I Have More Time, I Can:
+* Add **dark and light** theme support for better user **customization**.
+
+* Implement **sorting by fields** in ascending or descending order.
+
+* Add **infinite scrolling** with backend API integration.
+
+* Build **role-based login** for doctors and patients to manage their **appointments**.
+
+* Add a **calendar** view on the doctor’s dashboard to check availability.
+
+* Maintain a **list of booked appointments for tracking**.
+
+* Apply React best practices with hooks like **useMemo** and **useCallback** to **optimize rendering**.
+
+* backend implementation with structures DB management and api reponses
+
+## Challenges Faced 
+* not much challenges faced but a little bit difficulty to design the pages 
+
+
